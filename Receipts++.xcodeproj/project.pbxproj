@@ -15,6 +15,10 @@
 		BD69B6B81B5EBE2A006378C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD69B6B71B5EBE2A006378C9 /* Images.xcassets */; };
 		BD69B6BB1B5EBE2A006378C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD69B6B91B5EBE2A006378C9 /* LaunchScreen.xib */; };
 		BD69B6C71B5EBE2A006378C9 /* Receipts__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD69B6C61B5EBE2A006378C9 /* Receipts__Tests.m */; };
+		BD69B6D21B5EC048006378C9 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = BD69B6D11B5EC048006378C9 /* Tag.m */; };
+		BD69B6D51B5EC049006378C9 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = BD69B6D41B5EC049006378C9 /* Receipt.m */; };
+		BD69B6D81B5EC73E006378C9 /* ReceiptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD69B6D71B5EC73E006378C9 /* ReceiptCell.m */; };
+		BD69B7131B5EEB31006378C9 /* CreateReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD69B7121B5EEB31006378C9 /* CreateReceiptViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		BD69B6C01B5EBE2A006378C9 /* Receipts++Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Receipts++Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD69B6C51B5EBE2A006378C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD69B6C61B5EBE2A006378C9 /* Receipts__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receipts__Tests.m; sourceTree = "<group>"; };
+		BD69B6D01B5EC048006378C9 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		BD69B6D11B5EC048006378C9 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		BD69B6D31B5EC049006378C9 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
+		BD69B6D41B5EC049006378C9 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
+		BD69B6D61B5EC73E006378C9 /* ReceiptCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptCell.h; sourceTree = "<group>"; };
+		BD69B6D71B5EC73E006378C9 /* ReceiptCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptCell.m; sourceTree = "<group>"; };
+		BD69B7111B5EEB31006378C9 /* CreateReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateReceiptViewController.h; sourceTree = "<group>"; };
+		BD69B7121B5EEB31006378C9 /* CreateReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateReceiptViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,16 @@
 		BD69B6A61B5EBE2A006378C9 /* Receipts++ */ = {
 			isa = PBXGroup;
 			children = (
+				BD69B7111B5EEB31006378C9 /* CreateReceiptViewController.h */,
+				BD69B7121B5EEB31006378C9 /* CreateReceiptViewController.m */,
+				BD69B6D31B5EC049006378C9 /* Receipt.h */,
+				BD69B6D41B5EC049006378C9 /* Receipt.m */,
+				BD69B6D01B5EC048006378C9 /* Tag.h */,
+				BD69B6D11B5EC048006378C9 /* Tag.m */,
 				BD69B6AB1B5EBE2A006378C9 /* AppDelegate.h */,
 				BD69B6AC1B5EBE2A006378C9 /* AppDelegate.m */,
+				BD69B6D61B5EC73E006378C9 /* ReceiptCell.h */,
+				BD69B6D71B5EC73E006378C9 /* ReceiptCell.m */,
 				BD69B6B11B5EBE2A006378C9 /* ViewController.h */,
 				BD69B6B21B5EBE2A006378C9 /* ViewController.m */,
 				BD69B6B41B5EBE2A006378C9 /* Main.storyboard */,
@@ -223,9 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD69B6AD1B5EBE2A006378C9 /* AppDelegate.m in Sources */,
+				BD69B6D81B5EC73E006378C9 /* ReceiptCell.m in Sources */,
 				BD69B6AA1B5EBE2A006378C9 /* main.m in Sources */,
+				BD69B6D51B5EC049006378C9 /* Receipt.m in Sources */,
 				BD69B6B31B5EBE2A006378C9 /* ViewController.m in Sources */,
 				BD69B6B01B5EBE2A006378C9 /* Receipts__.xcdatamodeld in Sources */,
+				BD69B6D21B5EC048006378C9 /* Tag.m in Sources */,
+				BD69B7131B5EEB31006378C9 /* CreateReceiptViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
